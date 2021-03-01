@@ -1,10 +1,255 @@
 {
-  
-  
   "version": 2,
-  
-  "projects": {},
-  "cli": {
-    "defaultCollection": "@nrwl/workspace"
+  "cli": { "defaultCollection": "@nrwl/react" },
+  "defaultProject": "messenger-client",
+  "generators": {
+    "@nrwl/react": {
+      "application": {
+        "style": "styled-components",
+        "linter": "eslint",
+        "babel": true
+      },
+      "component": { "style": "styled-components" },
+      "library": { "style": "styled-components", "linter": "eslint" }
+    }
+  },
+  "projects": {
+    "messenger-client": {
+      "root": "apps/NotificationApp/messenger-client",
+      "sourceRoot": "apps/NotificationApp/messenger-client/src",
+      "projectType": "application",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/web:build",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/apps/NotificationApp/messenger-client",
+            "index": "apps/NotificationApp/messenger-client/src/index.html",
+            "main": "apps/NotificationApp/messenger-client/src/main.tsx",
+            "polyfills": "apps/NotificationApp/messenger-client/src/polyfills.ts",
+            "tsConfig": "apps/NotificationApp/messenger-client/tsconfig.app.json",
+            "assets": [
+              "apps/NotificationApp/messenger-client/src/favicon.ico",
+              "apps/NotificationApp/messenger-client/src/assets"
+            ],
+            "styles": [],
+            "scripts": [],
+            "webpackConfig": "@nrwl/react/plugins/webpack"
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/NotificationApp/messenger-client/src/environments/environment.ts",
+                  "with": "apps/NotificationApp/messenger-client/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/web:dev-server",
+          "options": { "buildTarget": "messenger-client:build" },
+          "configurations": {
+            "production": { "buildTarget": "messenger-client:build:production" }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/NotificationApp/messenger-client/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/NotificationApp/messenger-client"],
+          "options": {
+            "jestConfig": "apps/NotificationApp/messenger-client/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "notification-api": {
+      "root": "apps/NotificationApp/NotificationAppApi",
+      "projectType": "api",
+      "targets": {
+        "build": { "executor": "dotnet build" },
+        "serve": { "executor": "dotnet run", "configurations": {} },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/NotificationApp/messenger-client/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/NotificationApp/messenger-client"],
+          "options": {
+            "jestConfig": "apps/NotificationApp/messenger-client/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "messenger-client-e2e": {
+      "root": "apps/NotificationApp/messenger-client-e2e",
+      "sourceRoot": "apps/NotificationApp/messenger-client-e2e/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/NotificationApp/messenger-client-e2e/cypress.json",
+            "tsConfig": "apps/NotificationApp/messenger-client-e2e/tsconfig.e2e.json",
+            "devServerTarget": "messenger-client:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "messenger-client:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/NotificationApp/messenger-client-e2e/**/*.{js,ts}"
+            ]
+          }
+        }
+      }
+    },
+    "feature": {
+      "root": "libs/feature",
+      "sourceRoot": "libs/feature/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/feature/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feature"],
+          "options": {
+            "jestConfig": "libs/feature/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "notification-app-messenger": {
+      "root": "libs/notification-app/messenger",
+      "sourceRoot": "libs/notification-app/messenger/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/notification-app/messenger/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/notification-app/messenger"],
+          "options": {
+            "jestConfig": "libs/notification-app/messenger/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "notification-app-messengers": {
+      "root": "libs/notification-app/messengers",
+      "sourceRoot": "libs/notification-app/messengers/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/notification-app/messengers/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/notification-app/messengers"],
+          "options": {
+            "jestConfig": "libs/notification-app/messengers/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "notification-app-account": {
+      "root": "libs/notification-app/account",
+      "sourceRoot": "libs/notification-app/account/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/notification-app/account/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/notification-app/account"],
+          "options": {
+            "jestConfig": "libs/notification-app/account/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "notification-app-ui": {
+      "root": "libs/notification-app/ui",
+      "sourceRoot": "libs/notification-app/ui/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/notification-app/ui/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/notification-app/ui"],
+          "options": {
+            "jestConfig": "libs/notification-app/ui/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    }
   }
 }
