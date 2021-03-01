@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{7D148E8D-E746-4DF7-80F5-F133511DAAA3}|Default">
+  <MonoDevelop.Ide.ItemProperties.NotificationAppAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="NotificationAppAPI/Controllers/MessengerUserGroupsController.cs">
+    <Files>
+      <File FileName="NotificationAppAPI/Program.cs" Line="17" Column="1" />
+      <File FileName="NotificationAppAPI/Controllers/MessengerUserGroupsController.cs" Line="8" Column="22" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="NotificationApp" expanded="True">
+            <Node name="NotificationAppAPI" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="MessengerUserGroupsController.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="NotificationApp" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

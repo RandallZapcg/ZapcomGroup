@@ -37,3 +37,10 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+.eslintrc.json
+.vscode/launch.json
+.vscode/tasks.json
+babel.config.json
+jest.config.js
+jest.preset.js

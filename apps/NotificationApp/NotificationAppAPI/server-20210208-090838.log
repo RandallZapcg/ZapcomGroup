@@ -1,0 +1,122 @@
+JsonRpc Information: 3 : Listening started.
+JsonRpc Information: 7 : {"id":0,"method":"textDocument/didChange"}
+JsonRpc Verbose: 7 : Received: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": [
+    {
+      "textDocument": {
+        "uri": "file:///Users/randallrussell/Projects/NotificationApp/NotificationAppAPI/Controllers/MessagesController.cs",
+        "version": 76
+      },
+      "contentChanges": [
+        {
+          "text": "using System;\nusing System.Collections.Generic;\nusing System.Linq;\nusing System.Threading.Tasks;\nusing Microsoft.AspNetCore.Http;\nusing Microsoft.AspNetCore.Mvc;\nusing NotificationAppAPI.Data;\nusing NotificationAppAPI.Models;\nusing MessageLibrary.NameModel;\n{\n    \n}\n\n// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860\n\nnamespace NotificationAppAPI.Controllers\n{\n    [Route(\"api/[controller]\")]\n    public class MessagesController : Controller\n    {\n        private NotificationAppDbContext _context;\n\n\t\tpublic MessagesController(NotificationAppDbContext context)\n        {\n\t\t\t_context = context;\n\t\t}\n\n\t\t// GET: api/Messengers\n\t\t[HttpGet]\n        public IActionResult Get()\n        {\n\n            return Ok(_context.Messages);\n        }\n\n        // GET: api/Messengers/5\n        [HttpGet(\"{id}\", Name = \"Get\")]\n        public Message Get(int id)  \n        {   \n            var message = _context.Messages.Find(id);\n\t\t\treturn message;\n\t\t}\n\n        // POST api/values\n        [HttpPost]\n        public IActionResult Post(Message message)\n        {\n\t\t\tMessenger messenger = _context.Messengers.Find(1);\n            var name = new NameModel(message.Name, message.MessageId);\n            System.Console.WriteLine($\"XXXXXXXXXLXLLXLXLXLXLL: {name.Value}\");\n\t\t\tmessenger.Names.Add(name);\n            foreach(var n in messenger.Names) {\n                System.Console.WriteLine($\"XXXXXXXXXLXLLXLXLXLXLL: {n.Value}\");\n            }\n            \n\t\t\t_context.Messages.Add(message);\n\t\t\t_context.SaveChanges();\n\t\t\treturn StatusCode(StatusCodes.Status201Created);\n\t\t}\n\n        //// PUT api/values/5\n        //[HttpPut(\"{id}\")]\n        //public void Put(int id, [FromBody] string value)\n        //{\n        //}\n\n        //// DELETE api/values/5\n        //[HttpDelete(\"{id}\")]\n        //public void Delete(int id)\n        //{\n        //    var message = _context.Messages.Find(id);\n\n        //}\n    }\n}\n"
+        }
+      ]
+    }
+  ],
+  "id": 0
+}
+JsonRpc Information: 6 : Received request "0" for method "textDocument/didChange".
+JsonRpc Information: 9 : Invoking VSSharperServer.Server.VSSharperServer.TextDocumentDidChange(DidChangeTextDocumentParams)
+JsonRpc Information: 8 : {"id":0}
+JsonRpc Verbose: 8 : Sent: {
+  "jsonrpc": "2.0",
+  "result": null,
+  "id": 0
+}
+JsonRpc Information: 7 : {"id":1,"method":"workspace/executeCommand"}
+JsonRpc Verbose: 7 : Received: {
+  "jsonrpc": "2.0",
+  "method": "workspace/executeCommand",
+  "params": [
+    {
+      "command": "CSharpSortUsingDirectives"
+    }
+  ],
+  "id": 1
+}
+JsonRpc Information: 6 : Received request "1" for method "workspace/executeCommand".
+JsonRpc Information: 9 : Invoking VSSharperServer.Server.VSSharperServer.ExecuteCommand(ExecuteCommandParams)
+JsonRpc Information: 8 : {"id":2,"method":"workspace/applyEdit"}
+JsonRpc Verbose: 8 : Sent: {
+  "jsonrpc": "2.0",
+  "method": "workspace/applyEdit",
+  "params": [
+    {
+      "Edits": [
+        {
+          "NewText": "NotificationAppAPI.Models;",
+          "Range": {
+            "End": {
+              "Character": 1,
+              "Line": 11
+            },
+            "Start": {
+              "Character": 6,
+              "Line": 8
+            }
+          }
+        },
+        {
+          "NewText": "\r\nusing MessageLibrary.NameModel;\n{\n    \n}\n\r\nusing NotificationAppAPI.Data",
+          "Range": {
+            "End": {
+              "Character": 31,
+              "Line": 7
+            },
+            "Start": {
+              "Character": 0,
+              "Line": 6
+            }
+          }
+        },
+        {
+          "NewText": "\r\n",
+          "Range": {
+            "End": {
+              "Character": 0,
+              "Line": 4
+            },
+            "Start": {
+              "Character": 0,
+              "Line": 4
+            }
+          }
+        }
+      ],
+      "TextDocument": {
+        "Uri": "file:///Users/randallrussell/Projects/NotificationApp/NotificationAppAPI/Controllers/MessagesController.cs",
+        "Version": 76
+      },
+      "Kind": null,
+      "Options": null,
+      "Uri": null,
+      "NewUri": null,
+      "OldUri": null
+    }
+  ],
+  "id": 2
+}
+JsonRpc Information: 7 : {"id":2}
+JsonRpc Verbose: 7 : Received: {
+  "jsonrpc": "2.0",
+  "result": null,
+  "id": 2
+}
+JsonRpc Information: 11 : Received result for request "2".
+JsonRpc Information: 8 : {"id":1}
+JsonRpc Verbose: 8 : Sent: {
+  "jsonrpc": "2.0",
+  "result": null,
+  "id": 1
+}
+JsonRpc Information: 7 : {"id":null,"method":"exit"}
+JsonRpc Verbose: 7 : Received: {
+  "jsonrpc": "2.0",
+  "method": "exit"
+}
+JsonRpc Information: 6 : Received notification for method "exit".
+JsonRpc Information: 9 : Invoking VSSharperServer.Server.VSSharperServer.Exit()
+JsonRpc Information: 13 : Connection closing (LocallyDisposed: Stream has been disposed). 
