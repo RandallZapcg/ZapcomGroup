@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Data;
 
@@ -15,11 +14,11 @@ namespace MessageLibrary
             this.ChannelName = (string)reader["ChannelName"];
             this.UserEmail = (string)reader["User"];
     }
-        [Key]
-        public int MessengerUserGroupId { get; set; }
-        public string ChannelName { get; set; }
-        public string UserEmail { get; set; }
+    [Key]
+    public int MessengerUserGroupId { get; set; }
+    public string ChannelName { get; set; }
+    public string UserEmail { get; set; }
 		public int MessengerId { get; set; }
-        public int UserId { get; set; }
+    public int UserId { get; set; }
 	}
 }

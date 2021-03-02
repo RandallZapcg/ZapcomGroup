@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XSbOS38lMBq4jpIDd0WRjcg4T7Yy+HN8noJen/uLydtxJnx/Dc5FosVVsWUMxllfoXbCA9uq1sb/BlkxZVmpYQ==",
+  "dgSpecHash": "rc4Hed+FmSf15WIxYnhxrsXQ9mMFR++OomB5DMtDFZCZuyTm3WhLDdxP6zSPveRxqAYhDyY9pvcY8jOCAoO9uw==",
   "success": true,
-  "projectFilePath": "/Users/randallrussell/Projects/neighborly/apps/NotificationApp/messenger-client/MessengerClient.csproj",
+  "projectFilePath": "/Users/randallrussell/Projects/ZapcomGroup/apps/NotificationApp/messenger-client/MessengerClient.csproj",
   "expectedPackageFiles": [
     "/Users/randallrussell/.nuget/packages/automapper/10.0.0/automapper.10.0.0.nupkg.sha512",
     "/Users/randallrussell/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",

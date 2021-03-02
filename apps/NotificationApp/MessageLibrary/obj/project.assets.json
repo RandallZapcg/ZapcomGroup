@@ -6189,11 +6189,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/randallrussell/Projects/neighborly/apps/NotificationApp/MessageLibrary/MessageLibrary.csproj",
+      "projectUniqueName": "/Users/randallrussell/Projects/ZapcomGroup/apps/NotificationApp/MessageLibrary/MessageLibrary.csproj",
       "projectName": "MessageLibrary",
-      "projectPath": "/Users/randallrussell/Projects/neighborly/apps/NotificationApp/MessageLibrary/MessageLibrary.csproj",
+      "projectPath": "/Users/randallrussell/Projects/ZapcomGroup/apps/NotificationApp/MessageLibrary/MessageLibrary.csproj",
       "packagesPath": "/Users/randallrussell/.nuget/packages/",
-      "outputPath": "/Users/randallrussell/Projects/neighborly/apps/NotificationApp/MessageLibrary/obj/",
+      "outputPath": "/Users/randallrussell/Projects/ZapcomGroup/apps/NotificationApp/MessageLibrary/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/randallrussell/.nuget/NuGet/NuGet.Config"
