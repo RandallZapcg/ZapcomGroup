@@ -9317,11 +9317,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/randallrussell/Projects/ZapcomGroup/apps/NotificationApp/NotificationAppAPI/NotificationAppAPI.csproj",
+      "projectUniqueName": "/Users/randallrussell/Projects/NotificationMS/NotificationAppAPI/NotificationAppAPI.csproj",
       "projectName": "NotificationAppAPI",
-      "projectPath": "/Users/randallrussell/Projects/ZapcomGroup/apps/NotificationApp/NotificationAppAPI/NotificationAppAPI.csproj",
+      "projectPath": "/Users/randallrussell/Projects/NotificationMS/NotificationAppAPI/NotificationAppAPI.csproj",
       "packagesPath": "/Users/randallrussell/.nuget/packages/",
-      "outputPath": "/Users/randallrussell/Projects/ZapcomGroup/apps/NotificationApp/NotificationAppAPI/obj/",
+      "outputPath": "/Users/randallrussell/Projects/NotificationMS/NotificationAppAPI/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/randallrussell/.nuget/NuGet/NuGet.Config"
@@ -9336,8 +9336,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/Users/randallrussell/Projects/ZapcomGroup/apps/NotificationApp/MessageLibrary/MessageLibrary.csproj": {
-              "projectPath": "/Users/randallrussell/Projects/ZapcomGroup/apps/NotificationApp/MessageLibrary/MessageLibrary.csproj"
+            "/Users/randallrussell/Projects/NotificationMS/MessageLibrary/MessageLibrary.csproj": {
+              "projectPath": "/Users/randallrussell/Projects/NotificationMS/MessageLibrary/MessageLibrary.csproj"
             }
           }
         }

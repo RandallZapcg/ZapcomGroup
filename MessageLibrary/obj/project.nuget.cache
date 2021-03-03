@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0b1kvE3bZT0Aw+6mc+ZCgzhdwF1Zd4R2U6Qx/CpmwvFEsXQ6Mexkii6SAVM0+1s6rVRBA8v6n2KHHBTBSjH8gg==",
+  "dgSpecHash": "QdLbUw9RL3AH16vJ/f1onr6pCdZGLlLhw2r/90gYEdBoPMraLyZfo5txKA4NXX5Q8GATNFwLnx4z9oIoKVvraQ==",
   "success": true,
-  "projectFilePath": "/Users/randallrussell/Projects/ZapcomGroup/apps/NotificationApp/MessageLibrary/MessageLibrary.csproj",
+  "projectFilePath": "/Users/randallrussell/Projects/NotificationMS/MessageLibrary/MessageLibrary.csproj",
   "expectedPackageFiles": [
     "/Users/randallrussell/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/randallrussell/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",

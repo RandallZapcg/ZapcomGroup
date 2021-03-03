@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5MewczHXC3w6qG6TFDNUNJsxRLcK/2cmFIsDMPn+0RkH3KnRF4gn0deeaU7+/TDCmE3/WSfzj1xQbcgaNgUNjA==",
+  "dgSpecHash": "1V3yPoPVcdAhzSAn6v4ymhXhxdXDUF8weULp52w11ARE77EHRag7AL6A09Yt184QKXK/eTwo/VNe2EQE1Ua7zg==",
   "success": true,
-  "projectFilePath": "/Users/randallrussell/Projects/ZapcomGroup/apps/NotificationApp/NotificationAppAPI/NotificationAppAPI.csproj",
+  "projectFilePath": "/Users/randallrussell/Projects/NotificationMS/NotificationAppAPI/NotificationAppAPI.csproj",
   "expectedPackageFiles": [
     "/Users/randallrussell/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/randallrussell/.nuget/packages/microsoft.aspnetcore.html.abstractions/2.2.0/microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
