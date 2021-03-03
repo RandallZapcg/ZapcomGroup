@@ -5,15 +5,7 @@ VisualStudioVersion = 16.0.808.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationAppAPI", "NotificationAppAPI\NotificationAppAPI.csproj", "{7D148E8D-E746-4DF7-80F5-F133511DAAA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationClient", "NotificationClient\NotificationClient.csproj", "{B69A1183-28E9-44E6-9740-1C506C3148CC}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageLibrary", "MessageLibrary\MessageLibrary.csproj", "{917F303C-6EE1-48A5-A99E-7D40E0C7639D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationAppApi.Tests", "NotificationAppApi.Tests\NotificationAppApi.Tests.csproj", "{FBA029D1-E7E5-4620-A832-FE359B322F3E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestNotificationApp", "UnitTestNotificationApp\UnitTestNotificationApp.csproj", "{C4050C33-F8ED-4D82-AE66-81F58D67B1C0}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationAppClient", "NotificationAppClient\NotificationAppClient.csproj", "{18AAA548-32C0-40E7-98A4-FF5552DB7D09}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessengerClient", "messenger-client\MessengerClient.csproj", "{B5973007-5D41-4B01-97E1-F341DE8DE510}"
 EndProject
@@ -27,26 +19,10 @@ Global
 		{7D148E8D-E746-4DF7-80F5-F133511DAAA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D148E8D-E746-4DF7-80F5-F133511DAAA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D148E8D-E746-4DF7-80F5-F133511DAAA3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B69A1183-28E9-44E6-9740-1C506C3148CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B69A1183-28E9-44E6-9740-1C506C3148CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B69A1183-28E9-44E6-9740-1C506C3148CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B69A1183-28E9-44E6-9740-1C506C3148CC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{917F303C-6EE1-48A5-A99E-7D40E0C7639D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{917F303C-6EE1-48A5-A99E-7D40E0C7639D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{917F303C-6EE1-48A5-A99E-7D40E0C7639D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{917F303C-6EE1-48A5-A99E-7D40E0C7639D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FBA029D1-E7E5-4620-A832-FE359B322F3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FBA029D1-E7E5-4620-A832-FE359B322F3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FBA029D1-E7E5-4620-A832-FE359B322F3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FBA029D1-E7E5-4620-A832-FE359B322F3E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C4050C33-F8ED-4D82-AE66-81F58D67B1C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C4050C33-F8ED-4D82-AE66-81F58D67B1C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C4050C33-F8ED-4D82-AE66-81F58D67B1C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C4050C33-F8ED-4D82-AE66-81F58D67B1C0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{18AAA548-32C0-40E7-98A4-FF5552DB7D09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{18AAA548-32C0-40E7-98A4-FF5552DB7D09}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{18AAA548-32C0-40E7-98A4-FF5552DB7D09}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{18AAA548-32C0-40E7-98A4-FF5552DB7D09}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B5973007-5D41-4B01-97E1-F341DE8DE510}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B5973007-5D41-4B01-97E1-F341DE8DE510}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5973007-5D41-4B01-97E1-F341DE8DE510}.Release|Any CPU.ActiveCfg = Release|Any CPU
